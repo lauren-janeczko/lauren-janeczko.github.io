@@ -1,8 +1,14 @@
+@font-face {
+	font-family: QuickSand;
+	src: url(./fonts/Quicksand-Bold.ttf);
+}
+
 * {
     box-sizing: border-box;
-    font-family: Helvetica;
+    font-family: QuickSand, Helvetica;
     margin: 0;
 }
+
 
 body {
     background-color:#ffc7eb;
@@ -13,10 +19,17 @@ h1 {
 	margin-bottom: 1em;
 }
 
+.header {
+	text-align: center;
+	margin-bottom: 4em;
+	font-size: 3em;
+}
+
 header {
 	height: 100vh;
 	margin: auto;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-size: calc(1em + 1vw);
@@ -36,8 +49,51 @@ section {
 	background-color: white;
 	padding: 2em;
 	border: 3px solid;
+	border-radius: 25px;
 }
 
 .justified {
 	text-align: justify;
+}
+
+nav {
+	width: 100%;
+}
+
+nav > ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav > ul > li {
+	margin: 1em;
+	line-height: 3em;
+}
+
+li > a {
+	text-decoration: none;
+	font-weight: bolder;
+	padding: 1em 3em;
+	border: 1px solid black;
+	border-radius: 50px;
+	box-shadow: 5px 5px #0000002e;
+}
+
+li > a:hover {
+	background-color: #95caea !important;
+	color: #ffeb49;
+	box-shadow: 1px 2px #0000002e;
+}
+
+ul > li:nth-child(1) > a {
+	background-color: deeppink;
+}
+
+ul > li:nth-child(2) > a {
+	background-color: aqua;
+}
+
+ul > li:nth-child(3) > a {
+	background-color: yellow;
 }
