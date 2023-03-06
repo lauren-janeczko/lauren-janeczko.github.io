@@ -11,7 +11,7 @@
 
 
 body {
-    background-color:#ffc7eb;
+    background-color:#781274;
 }
 
 h1 {
@@ -46,7 +46,7 @@ section {
 	margin: auto;
 	width: 80%;
 	text-align: center;
-	background-color: white;
+	background-color: rgb(218, 166, 231);
 	padding: 2em;
 	border: 3px solid;
 	border-radius: 25px;
@@ -81,19 +81,19 @@ li > a {
 }
 
 li > a:hover {
-	background-color: #95caea !important;
-	color: #ffeb49;
+	background-color: #5d1717 !important;
+	color: #f01313;
 	box-shadow: 1px 2px #0000002e;
 }
 
 ul > li:nth-child(1) > a {
-	background-color: deeppink;
+	background-color: rgb(0, 0, 0);
 }
 
 ul > li:nth-child(2) > a {
-	background-color: aqua;
+	background-color: rgb(0, 0, 0);
 }
 
 ul > li:nth-child(3) > a {
-	background-color: yellow;
+	background-color: rgb(0, 0, 0);
 }

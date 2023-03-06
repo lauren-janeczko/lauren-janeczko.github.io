@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pill Reminder App</title>
+	<link rel="stylesheet" href="project1.css">
+</head>
+<body>
+	<header>
+		<h1>Pill Reminder</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Schedule</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2>Add Pill</h2>
+			<form>
+				<label for="pill-name">Name</label>
+				<input type="text" id="pill-name" name="pill-name" placeholder="Enter pill name">
+
+				<label for="pill-dosage">Dosage</label>
+				<input type="number" id="pill-dosage" name="pill-dosage" placeholder="Enter pill dosage">
+
+				<label for="pill-frequency">Frequency</label>
+				<select id="pill-frequency" name="pill-frequency">
+					<option value="1">Every day</option>
+					<option value="2">Every other day</option>
+					<option value="3">Every week</option>
+					<option value="4">Custom</option>
+				</select>
+
+				<label for="pill-start-date">Start Date</label>
+				<input type="date" id="pill-start-date" name="pill-start-date">
+
+				<label for="pill-time">Time</label>
+				<input type="time" id="pill-time" name="pill-time">
+
+				<input type="submit" value="Add Pill">
+			</form>
+		</section>
+
+		<section>
+			<h2>Pill Schedule</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Pill Name</th>
+						<th>Dosage</th>
+						<th>Frequency</th>
+						<th>Start Date</th>
+						<th>Time</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Aspirin</td>
+						<td>500mg</td>
+						<td>Every day</td>
+						<td>2022-03-07</td>
+						<td>10:00 AM</td>
+						<td><button>Delete</button></td>
+					</tr>
+					<tr>
+						<td>Ibuprofen</td>
+						<td>400mg</td>
+						<td>Every other day</td>
+						<td>2022-03-07</td>
+						<td>2:00 PM</td>
+						<td><button>Delete</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2022 Pill Reminder App</p>
+	</footer>
+
+	<script src="project1.js"></script>
+</body>
+</html>
+
